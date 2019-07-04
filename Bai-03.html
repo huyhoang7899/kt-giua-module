@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let D = new Date();
+    let namSinh, namHienTai;
+    namHienTai = D.getFullYear();
+    do {
+        namSinh = prompt("Bạn sinh năm bao nhiêu : ","");
+    } while (parseInt(namSinh)>namHienTai);
+    alert("Tuổi của bạn bây giờ là : " + (namHienTai-namSinh));
+</script>
+</body>
+</html>
