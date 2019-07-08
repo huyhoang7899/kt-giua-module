@@ -5,18 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-Enter a number : <input type="number" id="inputNumber"> <button onclick="outputSNT()">Show</button>
+Enter a number : <input type="number" id="txtNumber"> <button onclick="btnShow()">Show</button>
 <p id="a">
 <script>
-    function ktSoNguyenTo(N) {
-        for(let i = 2;i<N;i++){
-            if(N%i==0){
+    function ktSoNguyenTo(numBer) {
+        for(let i = 2;i < numBer ; i++){
+            if(numBer %i == 0){
                 return false;
             }
         }return true;
     }
-    function outputSNT() {
-        let number = document.getElementById("inputNumber").value;
+    function btnShow() {
+        let number = document.getElementById("txtNumber").value;
         for (let i = 2; i < number; i++) {
             if (ktSoNguyenTo(i)) {
                 document.getElementById("a").innerHTML += i + " ";
